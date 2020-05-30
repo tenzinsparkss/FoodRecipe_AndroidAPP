@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RecipeActivity">
+
+    <TextView
+        android:id="@+id/flamingo_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="Flamingo CookBook Recipe"
+        android:fontFamily="@font/simonetta_black"
+        android:textColor="#b01730"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/title_id"
+        android:layout_width="300sp"
+        android:layout_below="@+id/flamingo_recipe"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Title"
+        android:inputType="text"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ingredients_id"
+        android:layout_width="300sp"
+        android:layout_below="@+id/title_id"
+        android:layout_margin="15sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Ingredients"
+        android:inputType="text"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredients_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3sp"
+        android:text="Time" />
+
+
+    <Spinner
+        android:id="@+id/spin_time_id"
+        android:entries="@array/time"
+        android:layout_width="300sp"
+        android:layout_below="@+id/text_time"
+        android:layout_margin="5sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/description_id"
+        android:layout_width="300sp"
+        android:layout_below="@+id/spin_time_id"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Food Description"
+        android:inputType="text"
+        android:layout_height="100sp"/>
+
+    <EditText
+        android:id="@+id/directions_id"
+        android:layout_width="300sp"
+        android:layout_below="@+id/description_id"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Directions"
+        android:inputType="text"
+        android:layout_height="100sp"/>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="270sp"
+        android:layout_below="@+id/directions_id"
+        android:text="POST"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5sp"
+        android:textColor="@color/colorText"
+        android:onClick="post"
+        android:background="@color/colorBackground1"
+        android:layout_height="40sp"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".HelloActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="@string/discover"
+        android:fontFamily="@font/simonetta_black"
+        android:textColor="#b01730"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="500sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/log1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:fontFamily="@font/simonetta_black"
+        android:text="A taste of reminiscence in Nepali culture "
+        android:textColor="#b01730"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="270sp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380sp"
+        android:textColor="@color/colorText"
+        android:onClick="login"
+        android:background="@color/colorBackground1"
+        android:layout_height="40sp"/>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="270sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="430sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBackground1"
+        android:onClick="Signin"
+        android:text="Sign up"
+        android:textColor="@color/colorText" />
+
+
+</RelativeLayout>

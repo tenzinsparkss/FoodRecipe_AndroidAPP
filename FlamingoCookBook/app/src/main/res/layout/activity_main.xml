@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/flamingo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Flamingo CookBook"
+        android:layout_margin="40sp"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+
+    <EditText
+        android:layout_width="300sp"
+        android:id="@+id/login_email_id"
+        android:layout_below="@+id/flamingo_id"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5sp"
+        android:hint="Username or Email"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="300sp"
+        android:id="@+id/login_password_id"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_email_id"
+        android:layout_margin="5sp"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/forgot_password_id"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_password_id"
+        android:layout_margin="5sp"
+        android:text="Forgot Password?"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/forgot_password_id"
+        android:layout_margin="5sp"
+        android:onClick="login"
+        android:text="Log in"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/account_id"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_btn"
+        android:layout_margin="5sp"
+        android:text="Don't have an account? Signup"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SigninActivity">
+
+    <TextView
+        android:id="@+id/text_create_account"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/signup_fullname_id"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_create_account"
+        android:layout_marginTop="10sp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/signup_lastname_id"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signup_fullname_id"
+        android:layout_marginTop="10sp"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/sigup_email_id"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signup_lastname_id"
+        android:layout_marginTop="10sp"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/signup_password_id"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sigup_email_id"
+        android:layout_marginTop="10sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/signup_confirm_password_id"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signup_password_id"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signup_confirm_password_id"
+        android:layout_marginTop="10sp"
+        android:text="Register"
+        android:onClick="Signin"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</RelativeLayout>

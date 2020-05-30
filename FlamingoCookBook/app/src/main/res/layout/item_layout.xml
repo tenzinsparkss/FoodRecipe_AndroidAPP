@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title_id"
+        android:text="Recipe title"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_ingredients_id"
+        android:text="Ingredients List"
+        android:layout_below="@+id/text_title_id"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_time_id"
+        android:text="Time estimaion"
+        android:layout_below="@+id/text_ingredients_id"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_description_id"
+        android:text="Food Description"
+        android:layout_below="@+id/text_time_id"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_direction_id"
+        android:text="Steps to follow (Direction)"
+        android:layout_below="@+id/text_description_id"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

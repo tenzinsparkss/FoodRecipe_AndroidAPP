@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FlamingoCookBook</string>
+    <string name="discover">Discover</string>
+
+    <array name="time">
+        <item>15 minutes</item>
+        <item>25 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+    </array>
+</resources>

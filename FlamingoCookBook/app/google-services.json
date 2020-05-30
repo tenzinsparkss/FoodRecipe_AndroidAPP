@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "559588227028",
+    "firebase_url": "https://flamingocookbook.firebaseio.com",
+    "project_id": "flamingocookbook",
+    "storage_bucket": "flamingocookbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559588227028:android:a65ce1cb96bb60854c0841",
+        "android_client_info": {
+          "package_name": "com.example.flamingocookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559588227028-btjquc2p4s2gtlu5ei70llpdqf5d7nk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flamingocookbook",
+            "certificate_hash": "967450ea03ba3e91201859036839a828e61349bc"
+          }
+        },
+        {
+          "client_id": "559588227028-n9is78mnjeho0nkb4ikuri2951baeqlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAreMAYVj7pZ_wN8lLZ6Ie6afP_teK4Vns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559588227028-n9is78mnjeho0nkb4ikuri2951baeqlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
