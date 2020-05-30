@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.net.CacheRequest;
 import java.util.List;
 
@@ -35,7 +37,11 @@ public class MyAdapter extends RecyclerView.Adapter<FoodViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull final FoodViewHolder holder, final int position) {
-//        holder.imageView.setImageResource(myFoodList.get(position).getItemImage());
+        //this glide library is used for showing images from firebase storage with the help of images' path stored in database.
+        Glide.with(mContext)
+                .load(myFoodList.get(position).getItemImage())
+                .into(holder.imageView);
+//      holder.imageView.setImageResource(myFoodList.get(position).getItemImage());
         holder.mtitle.setText(myFoodList.get(position).getItemName());
         holder.mDescription.setText(myFoodList.get(position).getItemDescription());
         holder.mType.setText(myFoodList.get(position).getItemType());

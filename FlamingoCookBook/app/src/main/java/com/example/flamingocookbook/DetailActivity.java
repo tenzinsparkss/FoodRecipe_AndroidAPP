@@ -7,8 +7,10 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DetailActivity extends AppCompatActivity {
+import com.bumptech.glide.Glide;
 
+public class DetailActivity extends AppCompatActivity {
+    TextView foodTitle;
     TextView foodDescription;
     ImageView foodImage;
 
@@ -17,6 +19,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        foodTitle = (TextView)findViewById(R.id.tvTitle);
         foodDescription = (TextView)findViewById(R.id.tvDescription);
         foodImage = (ImageView)findViewById(R.id.ivImages);
 
@@ -24,8 +27,13 @@ public class DetailActivity extends AppCompatActivity {
 
         if(mBundle!=null){
 
+            foodTitle.setText(mBundle.getString("Title"));
             foodDescription.setText(mBundle.getString("Description"));
-            foodImage.setImageResource(mBundle.getInt("Image"));
+            //foodImage.setImageResource(mBundle.getInt("Image"));
+
+            Glide.with(this)
+                    .load(mBundle.getString("Image"))
+                    .into(foodImage);
 
         }
     }
